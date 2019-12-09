@@ -188,7 +188,7 @@ class TestGh(expecttest.TestCase):
 Repository state:
 
     * rMRG1 (gh/ezyang/1/head) Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -228,7 +228,7 @@ Repository state:
 
     * rMRG2 (gh/ezyang/2/head) Commit 2
     * rMRG1 (gh/ezyang/2/base, gh/ezyang/1/head) Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -261,7 +261,7 @@ Repository state:
 Repository state:
 
     * rMRG1 (gh/ezyang/1/head) Commit 2
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -292,7 +292,7 @@ Repository state:
 Repository state:
 
     * rMRG1 (gh/ezyang/1/head) Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -313,7 +313,7 @@ Repository state:
 Repository state:
 
     * rMRG1 (gh/ezyang/1/head) Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -346,7 +346,7 @@ Repository state:
 Repository state:
 
     * rMRG1 (gh/ezyang/1/head) Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
         print("###")
@@ -375,7 +375,7 @@ Repository state:
 
     * rMRG2 (gh/ezyang/1/head) Update A on "Commit 1"
     * rMRG1 Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -408,7 +408,7 @@ Repository state:
 Repository state:
 
     * rMRG1 (gh/ezyang/1/head) Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
         print("###")
@@ -434,7 +434,7 @@ Repository state:
 
     * rMRG2 (gh/ezyang/1/head) Update A on "Commit 1"
     * rMRG1 Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -524,7 +524,7 @@ Repository state:
 
     * rMRG2 (gh/ezyang/2/head) Commit 2
     * rMRG1 (gh/ezyang/2/base, gh/ezyang/1/head) Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -580,7 +580,7 @@ Repository state:
 
     * rMRG2 (gh/ezyang/2/head) Commit 2
     * rMRG1 (gh/ezyang/2/base, gh/ezyang/1/head) Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
         print("###")
@@ -621,7 +621,7 @@ Repository state:
     * rMRG2A (gh/ezyang/2/head) Update A on "Commit 2"
     * rMRG2 Commit 2
     * rMRG1 (gh/ezyang/2/base, gh/ezyang/1/head) Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -677,7 +677,7 @@ Repository state:
 
     * rMRG2 (gh/ezyang/2/head) Commit 2
     * rMRG1 (gh/ezyang/2/base, gh/ezyang/1/head) Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -720,7 +720,7 @@ Repository state:
     | * rMRG2 (gh/ezyang/2/head) Commit 2
     |/
     * rMRG1 (gh/ezyang/2/base) Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -762,7 +762,7 @@ Repository state:
     * | rMRG2 Commit 2
     |/
     * rMRG1 Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -818,7 +818,7 @@ Repository state:
 
     * rMRG2 (gh/ezyang/2/head) Commit 2
     * rMRG1 (gh/ezyang/2/base, gh/ezyang/1/head) Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -872,7 +872,7 @@ Repository state:
     * | rMRG2 Commit 2
     |/
     * rMRG1 Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -931,25 +931,25 @@ Repository state:
 
     * rMRG2 (gh/ezyang/2/head) Commit 2
     * rMRG1 (gh/ezyang/2/base, gh/ezyang/1/head) Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
         print("###")
-        print("### Push master forward")
-        self.sh.git("checkout", "master")
-        with self.sh.open("master.txt", "w") as f:
+        print("### Push develop forward")
+        self.sh.git("checkout", "develop")
+        with self.sh.open("develop.txt", "w") as f:
             f.write("M")
-        self.sh.git("add", "master.txt")
+        self.sh.git("add", "develop.txt")
         self.sh.git("commit", "-m", "Master commit 1\n\nA commit with a M")
         self.substituteRev("HEAD", "rINI2")
         self.sh.test_tick()
-        self.sh.git("push", "origin", "master")
+        self.sh.git("push", "origin", "develop")
 
         print("###")
         print("### Rebase the commits")
         self.sh.git("checkout", "feature")
-        self.sh.git("rebase", "origin/master")
+        self.sh.git("rebase", "origin/develop")
 
         self.substituteRev("HEAD", "rCOM2A")
         self.substituteRev("HEAD~", "rCOM1A")
@@ -987,7 +987,7 @@ Repository state:
     |\\
     | *   rMRG1A (gh/ezyang/2/base, gh/ezyang/1/head) Rebase on "Commit 1"
     | |\\
-    | | * rINI2 (HEAD -> master, gh/ezyang/1/base) Master commit 1
+    | | * rINI2 (HEAD -> develop, gh/ezyang/1/base) Master commit 1
     * | | rMRG2 Commit 2
     |/ /
     * | rMRG1 Commit 1
@@ -1051,20 +1051,20 @@ Repository state:
 
     * rMRG2 (gh/ezyang/2/head) Commit 2
     * rMRG1 (gh/ezyang/2/base, gh/ezyang/1/head) Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
         print("###")
-        print("### Push master forward")
-        self.sh.git("checkout", "master")
-        with self.sh.open("master.txt", "w") as f:
+        print("### Push develop forward")
+        self.sh.git("checkout", "develop")
+        with self.sh.open("develop.txt", "w") as f:
             f.write("M")
-        self.sh.git("add", "master.txt")
+        self.sh.git("add", "develop.txt")
         self.sh.git("commit", "-m", "Master commit 1\n\nA commit with a M")
         self.substituteRev("HEAD", "rINI2")
         self.sh.test_tick()
-        self.sh.git("push", "origin", "master")
+        self.sh.git("push", "origin", "develop")
 
         print("###")
         print("### Cherry-pick the second commit")
@@ -1103,7 +1103,7 @@ Repository state:
     |\\
     | *   rINI2A (gh/ezyang/2/base) Update base for Cherry pick on "Commit 2"
     | |\\
-    | | * rINI2 (HEAD -> master) Master commit 1
+    | | * rINI2 (HEAD -> develop) Master commit 1
     * | | rMRG2 Commit 2
     |/ /
     * | rMRG1 (gh/ezyang/1/head) Commit 1
@@ -1140,7 +1140,7 @@ Repository state:
 Repository state:
 
     * rMRG1 (gh/ezyang/1/head) Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -1167,7 +1167,7 @@ Directly updated message body""",
 Repository state:
 
     * rMRG1 (gh/ezyang/1/head) Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -1198,7 +1198,7 @@ Repository state:
 
     * rMRG2 (gh/ezyang/1/head) Update 1 on "Directly updated title"
     * rMRG1 Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -1231,7 +1231,7 @@ Repository state:
 Repository state:
 
     * rMRG1 (gh/ezyang/1/head) Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -1282,7 +1282,7 @@ Repository state:
 
     * rMRG2 (gh/ezyang/2/head) Commit 2
     * rMRG1 (gh/ezyang/2/base, gh/ezyang/1/head) Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -1333,7 +1333,7 @@ Repository state:
 Repository state:
 
     * rMRG1 (gh/ezyang/1/head) Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -1353,7 +1353,7 @@ Repository state:
 Repository state:
 
     * rMRG1 (gh/ezyang/1/head) Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -1377,7 +1377,7 @@ Repository state:
 
     * 49615a9 (gh/ezyang/1/head) Update 1 on "Commit 1"
     * rMRG1 Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -1409,7 +1409,7 @@ Repository state:
 Repository state:
 
     * rMRG1 (gh/ezyang/1/head) Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -1436,7 +1436,7 @@ Repository state:
 
     * 93de014 (gh/ezyang/1/head) Update 1 on "Amended"
     * rMRG1 Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -1469,7 +1469,7 @@ Repository state:
 Repository state:
 
     * rMRG1 (gh/ezyang/1/head) Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -1498,7 +1498,7 @@ Differential Revision: [D14778507](https://our.internmc.facebook.com/intern/diff
 Repository state:
 
     * rMRG1 (gh/ezyang/1/head) Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -1523,7 +1523,7 @@ Repository state:
 
     * 0800457 (gh/ezyang/1/head) Update 1 on "Commit 1"
     * rMRG1 Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -1582,13 +1582,13 @@ Repository state:
 
     * rMRG2 (gh/ezyang/2/head) Commit 2
     * rMRG1 (gh/ezyang/2/base, gh/ezyang/1/head) Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
         print("###")
         print("### Delete first commit")
-        self.sh.git("checkout", "master")
+        self.sh.git("checkout", "develop")
 
         print("###")
         print("### Cherry-pick the second commit")
@@ -1631,7 +1631,7 @@ Repository state:
     |/ /
     * | rMRG1 (gh/ezyang/1/head) Commit 1
     |/
-    * rINI0 (HEAD -> master, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/1/base) Initial commit
 
 ''')
 
@@ -1659,7 +1659,7 @@ Repository state:
         self.substituteRev("HEAD", "rCOM1")
 
         self.gh_land(pr_url)
-        self.assertExpected(self.upstream_sh.git("log", "--oneline", "master"), '''\
+        self.assertExpected(self.upstream_sh.git("log", "--oneline", "develop"), '''\
 rCOM1 Commit 1
 rINI0 Initial commit''')
 
@@ -1683,7 +1683,7 @@ rINI0 Initial commit''')
         self.substituteRev("HEAD", "rCOM2")
 
         self.gh_land(pr_url)
-        self.assertExpected(self.upstream_sh.git("log", "--oneline", "master"), '''\
+        self.assertExpected(self.upstream_sh.git("log", "--oneline", "develop"), '''\
 rCOM2 Commit 2
 rCOM1 Commit 1
 rINI0 Initial commit''')
@@ -1710,7 +1710,7 @@ rINI0 Initial commit''')
 
         self.gh_land(pr_url1)
         self.gh_land(pr_url2)
-        self.assertExpected(self.upstream_sh.git("log", "--oneline", "master"), '''\
+        self.assertExpected(self.upstream_sh.git("log", "--oneline", "develop"), '''\
 rCOM2 Commit 2
 rCOM1 Commit 1
 rINI0 Initial commit''')
@@ -1742,8 +1742,8 @@ rINI0 Initial commit''')
         self.gh('Update')
 
         self.gh_land(pr_url)
-        self.assertExpected(self.upstream_sh.git("show", "master:file1.txt"), '''ABBA''')
-        self.assertExpected(self.upstream_sh.git("show", "master:file2.txt"), '''B''')
+        self.assertExpected(self.upstream_sh.git("show", "develop:file1.txt"), '''ABBA''')
+        self.assertExpected(self.upstream_sh.git("show", "develop:file2.txt"), '''B''')
 
     # ------------------------------------------------------------------------- #
 
@@ -1757,7 +1757,7 @@ rINI0 Initial commit''')
         pr_url = diff.pr_url
         self.substituteRev("HEAD", "rCOM1")
 
-        self.sh.git("reset", "--hard", "origin/master")
+        self.sh.git("reset", "--hard", "origin/develop")
         with self.sh.open("file2.txt", "w") as f:
             f.write("B")
         self.sh.git("add", "file2.txt")
@@ -1768,9 +1768,9 @@ rINI0 Initial commit''')
         self.sh.git("checkout", "gh/ezyang/1/orig")
         self.gh_land(pr_url)
 
-        self.substituteRev("origin/master", "rUP2")
+        self.substituteRev("origin/develop", "rUP2")
 
-        self.assertExpected(self.upstream_sh.git("log", "--oneline", "master"), '''\
+        self.assertExpected(self.upstream_sh.git("log", "--oneline", "develop"), '''\
 rUP2 Commit 1
 rUP1 Upstream commit
 rINI0 Initial commit''')
@@ -1842,7 +1842,7 @@ Repository state:
 
     * rMRG2 (gh/ezyang/4/head, gh/ezyang/2/head) Commit 1
     * rMRG1 (gh/ezyang/4/base, gh/ezyang/3/head, gh/ezyang/2/base, gh/ezyang/1/head) Commit 1
-    * rINI0 (HEAD -> master, gh/ezyang/3/base, gh/ezyang/1/base) Initial commit
+    * rINI0 (HEAD -> develop, gh/ezyang/3/base, gh/ezyang/1/base) Initial commit
 
 ''')
 

@@ -113,7 +113,7 @@ class GitHubState:
                 "commit-tree",
                 tree,
                 input="Initial commit")
-            self.upstream_sh.git("branch", "-f", "master", commit)
+            self.upstream_sh.git("branch", "-f", "develop", commit)
 
 
 @dataclass

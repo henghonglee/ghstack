@@ -47,7 +47,7 @@ def main(pull_request: str,
     # Get up-to-date
     sh.git("fetch", "origin")
     remote_orig_ref = "origin/" + orig_ref
-    base = GitCommitHash(sh.git("merge-base", "origin/master", remote_orig_ref))
+    base = GitCommitHash(sh.git("merge-base", "origin/develop", remote_orig_ref))
 
     # compute the stack of commits in chronological order (does not
     # include base)
@@ -61,7 +61,7 @@ def main(pull_request: str,
         prev_ref = sh.git("rev-parse", "HEAD")
 
     # If this fails, we don't have to reset
-    sh.git("checkout", "origin/master")
+    sh.git("checkout", "origin/develop")
 
     try:
         # Compute the metadata for each commit
@@ -86,7 +86,7 @@ def main(pull_request: str,
                 raise
 
         # All good! Push!
-        sh.git("push", "origin", "HEAD:refs/heads/master")
+        sh.git("push", "origin", "HEAD:refs/heads/develop")
 
     finally:
         sh.git("checkout", prev_ref)

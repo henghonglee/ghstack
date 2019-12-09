@@ -33,7 +33,7 @@ def main(commits: Optional[List[str]] = None,
         for c in commits:
             parsed_commits.add(GitCommitHash(sh.git("rev-parse", c)))
 
-    base = GitCommitHash(sh.git("merge-base", "origin/master", "HEAD"))
+    base = GitCommitHash(sh.git("merge-base", "origin/develop", "HEAD"))
 
     # compute the stack of commits in chronological order (does not
     # include base)

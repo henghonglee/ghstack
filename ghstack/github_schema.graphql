@@ -6697,7 +6697,7 @@ type Repository implements Node & ProjectOwner & RegistryPackageOwner & Reposito
   # Fetch a given ref from the repository
   ref(
     # The ref to retrieve. Fully qualified matches are checked in order
-    # (`refs/heads/master`) before falling back onto checks for short name matches (`master`).
+    # (`refs/heads/develop`) before falling back onto checks for short name matches (`develop`).
     qualifiedName: String!
   ): Ref
 

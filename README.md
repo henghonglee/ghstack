@@ -10,7 +10,7 @@ Python 3.6 and greater only.
 
 ## How to use
 
-Prepare a series of commits on top of master, then run `ghstack`.  This
+Prepare a series of commits on top of develop, then run `ghstack`.  This
 tool will push and create pull requests for each commit on the stack.
 
 **How do I stack another PR on top of an existing one?** Assuming
@@ -22,17 +22,17 @@ run `ghstack` again.  If the commit is at the top of your stack,
 you can edit it with `git commit --amend`; otherwise, you'll have
 to use `git rebase -i` to edit the commit directly.
 
-**How do I rebase?**  The obvious way: `git rebase origin/master`.
+**How do I rebase?**  The obvious way: `git rebase origin/develop`.
 Don't do a `git merge`; `ghstack` will throw a hissy fit if you
 do that.  (There's also a more fundamental reason why this
 won't work: since each commit is a separate PR, you have to
 resolve conflicts in *each* PR, not just for the entire stack.)
 
-**How do I start a new feature?**  Just checkout master on a new
+**How do I start a new feature?**  Just checkout develop on a new
 branch, and start working on a fresh branch.
 
 **WARNING.**  You will NOT be able to merge these commits using the
-normal GitHub UI, as their branch bases won't be master.  For the
+normal GitHub UI, as their branch bases won't be develop.  For the
 PyTorch repository, we have a special mechanism for landing diffs;
 if you need a way to land these commits on a regular GitHub
 repository, give a holler on issues and we'll add this functionality.
@@ -42,10 +42,10 @@ repository, give a holler on issues and we'll add this functionality.
 Every commit in your local commit stack gets submitted into a separate
 pull request and pushes commits onto three branches:
 
-* `gh/username/1/base` - think of this like "master": it's the base
+* `gh/username/1/base` - think of this like "develop": it's the base
   branch that your commit was based upon.  It is never force pushed;
   whenever you rebase your local stack, we add merge commits on top of
-  base from the true upstream master.
+  base from the true upstream develop.
 
 * `gh/username/1/head` - this branch is your change, on top of the base
   branch.  Like base, it is never force pushed.  We open a pull request

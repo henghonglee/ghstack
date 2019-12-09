@@ -164,7 +164,7 @@ def main(msg: Optional[str],
     repo_id = repo["id"]
 
     sh.git("fetch", "origin")
-    base = GitCommitHash(sh.git("merge-base", "origin/master", "HEAD"))
+    base = GitCommitHash(sh.git("merge-base", "origin/develop", "HEAD"))
 
     # compute the stack of commits to process (reverse chronological order),
     stack = ghstack.git.parse_header(
@@ -693,11 +693,11 @@ Since we cannot proceed, ghstack will abort now.
         #      this commit too.  (You can't easily tell distinguish
         #      between rebase versus rebase+amend)
         #
-        #   3. The parent is now master (any prior parent
-        #      commits were absorbed into master.)
+        #   3. The parent is now develop (any prior parent
+        #      commits were absorbed into develop.)
         #
         #   4. The parent is totally disconnected, the history
-        #      is bogus but at least the merge-base on master
+        #      is bogus but at least the merge-base on develop
         #      is the same or later.  (This can occur if you
         #      cherry-picked a commit out of an old stack and
         #      want to make it independent.)
@@ -708,7 +708,7 @@ Since we cannot proceed, ghstack will abort now.
         #
         # TODO: What we have here actually works pretty hard to
         # maintain a consistent merge history between all PRs;
-        # so, e.g., you could merge with master and things
+        # so, e.g., you could merge with develop and things
         # wouldn't break.  But we don't necessarily have to do
         # this; all we need is the delta between base and head
         # to make sense.  The benefit to doing this is you could
@@ -931,7 +931,7 @@ Since we cannot proceed, ghstack will abort now.
                 else:
                     q = push_branches
                 q.append(push_spec(commit, branch(self.username, s.ghnum, b)))
-        # Careful!  Don't push master.
+        # Careful!  Don't push develop.
         # TODO: These pushes need to be atomic (somehow)
         if base_push_branches:
             self.sh.git("push", "origin", *base_push_branches)
